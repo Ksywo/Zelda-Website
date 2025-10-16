@@ -1,0 +1,179 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #0e1a12;
+    color: #e3d9b4;
+    margin: 0;
+}
+
+header {
+    background-color: #1b3a28;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #d4c16c;
+    margin-bottom: 10px;
+}
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;             
+  font-size: 2em;
+  color: #fff4a3;        
+  font-family: "Cinzel", serif; 
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+
+nav a {
+    color: #e3d9b4;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #314f3a;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+}
+.hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+}
+
+.hero-content {
+  animation: fadeIn 2s ease-in-out;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 40%;
+  transform: translateY(-40%);
+  background: rgba(0, 0, 0, 0.3); 
+  padding: 20px;
+  border-radius: 10px;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-50%); }
+  to { opacity: 1; transform: translateY(-40%); }
+}
+
+
+.hero h2 {
+    font-size: 2em;
+    color: #fff;
+}
+
+button {
+    background-color: #d4c16c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background-color: #1e3c2a;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: left;
+    padding: 10px;
+    background-color: #1b3a28;
+    color: #aaa;
+}
+/* === Секция с картой === */
+.zoom-container {
+  overflow: hidden;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.zoom-container img {
+  width: 100%;
+  user-select: none;
+  cursor: grab;
+  transition: transform 0.1s ease;
+  transform-origin: center center;
+}
+
+.zoom-container img:active {
+  cursor: grabbing;
+}
+
+#map-image {
+  width: 100%;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
