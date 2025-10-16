@@ -160,6 +160,37 @@ footer {
     background-color: #1b3a28;
     color: #aaa;
 }
+.games-page {
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+}
+
+.games-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.games-list .game {
+  color: #f4d742;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #f4d742;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.games-list .game:hover {
+  background-color: #f4d742;
+  color: #000;
+  transform: scale(1.05);
+}
+
 /* === Секция с картой === */
 .zoom-container {
   overflow: hidden;
@@ -186,5 +217,4 @@ footer {
   width: 100%;
   transition: transform 0.3s ease;
   transform-origin: center center;
-
 }
