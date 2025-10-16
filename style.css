@@ -162,7 +162,7 @@ footer {
 }
 .games-page {
   text-align: center;
-  padding: 40px;
+  padding: 40px 20px;
   color: #fff;
 }
 
@@ -170,19 +170,25 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   margin-top: 30px;
 }
 
+
 .games-list .game {
+  display: inline-block;
   color: #f4d742;
+  background-color: rgba(0, 0, 0, 0.5); 
   text-decoration: none;
   font-size: 1.3em;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border: 2px solid #f4d742;
   border-radius: 10px;
   transition: all 0.3s ease;
+  -webkit-appearance: none; 
+  appearance: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .games-list .game:hover {
@@ -190,6 +196,12 @@ footer {
   color: #000;
   transform: scale(1.05);
 }
+
+.games-list .game:active {
+  transform: scale(0.97);
+  opacity: 0.9;
+}
+
 
 /* === Секция с картой === */
 .zoom-container {
