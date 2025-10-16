@@ -65,7 +65,7 @@ nav a:hover, nav a.active {
   height: 100%;
   overflow: hidden;
   z-index: -1; 
-  background: url('zelda-bg-fallback.jpg') center/cover no-repeat;
+  background: url('zelda-bg-fallback.png') center/cover no-repeat;
 }
 
 #bg-video {
@@ -186,4 +186,5 @@ footer {
   width: 100%;
   transition: transform 0.3s ease;
   transform-origin: center center;
+
 }
