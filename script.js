@@ -13,7 +13,7 @@ map.addEventListener("wheel", (event) => {
 
   const zoomSpeed = 0.1;
   scale += event.deltaY < 0 ? zoomSpeed : -zoomSpeed;
-  scale = Math.min(Math.max(scale, 1), 3);
+  scale = Math.min(Math.max(scale, 1), 5);
 
   constrainPosition();
   updateTransform();
@@ -67,3 +67,4 @@ function constrainPosition() {
     translateY = 0;
   }
 }
+
