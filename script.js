@@ -21,6 +21,7 @@ map.addEventListener("wheel", (event) => {
 
 // Нажатие — начинаем перетаскивание
 map.addEventListener("mousedown", (event) => {
+  event.preventDefault();
   isDragging = true;
   startX = event.clientX - translateX;
   startY = event.clientY - translateY;
